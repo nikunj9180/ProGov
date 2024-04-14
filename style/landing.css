@@ -1,0 +1,72 @@
+nav{
+    position:absolute;
+    top: 0%;
+    z-index: 12;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.main-nav-cont{
+    justify-content: center;
+    padding: var(--padding-inline);
+}
+.main-banner-cont{
+    height: 100vh;
+}
+.banner{
+    position: relative;
+    background: url(../assets/banner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-banner-cont{
+    justify-content: center;
+    align-items: center;
+}
+
+.bcard{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-color:rgba(153, 158, 166, 0.9);
+    padding:150px 15px;
+    border-radius: 50%;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.acont-heading{
+    padding: var(--padding-inline);
+    text-align: center;
+    color: #8e949e;
+}
+.acard{
+    justify-content: space-between;
+}
+.acard-left img{
+    width: 100%;
+}
+.acard-left{
+    width: 48%;
+}
+.acard-right{
+    width: 48%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: var(--padding-inline);
+}
+
+.aboutus-cont .acard:nth-child(3){
+    flex-direction: row-reverse;
+}
+
+.aboutus-cont{
+    flex-direction: column;
+    gap: 50px;
+    padding:50px var(--padding-inline);
+}
