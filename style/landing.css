@@ -75,12 +75,27 @@ nav{
 }
 .contact-cont{
     background-color: #f6f6f6;
+    position: relative;
 }
 .left-contact{
-    width: 50%;
+    width: 50%;;
 }
 .right-contact{
     width: 50%;
+}
+.contactform{
+    position: absolute;
+    width: 50%; 
+    left: -50%;
+    height: 100%;
+    background-color: #f6f6f6;
+    padding: 50px 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.5s all ease-in-out;
+}
+.contactform.active{
+    left: 0%;
 }
 .left-contact{
     padding: 50px 100px;
@@ -88,12 +103,30 @@ nav{
     gap: 60px;
     justify-content: space-around;
 }
-.left-contact h2,p,a{
-    color: #8e949e;
+.left-contact h2,.left-contact a, .left-contact p{
+    color: #8e949e !important;
 }
 .contact-btn .primary-button{
     width: 200px !important;
     text-align: center;
     background-color: #999ea6;
     color: black !important;
+}
+
+.cform{
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="text"],input[type="email"],textarea,input[type="submit"]{
+    border: none;
+    margin: none;
+    padding: var(--padding-inline);
+    font-size: 1rem;
+    font-family: 'Poppins',sans-serif;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+input[type="text"]:focus,input[type="email"]:focus,textarea:focus{
+    outline: none;
 }
