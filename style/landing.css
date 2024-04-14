@@ -1,3 +1,6 @@
+body{
+    user-select: none;
+}
 nav{
     position:absolute;
     top: 0%;
@@ -69,4 +72,28 @@ nav{
     flex-direction: column;
     gap: 50px;
     padding:50px var(--padding-inline);
+}
+.contact-cont{
+    background-color: #f6f6f6;
+}
+.left-contact{
+    width: 50%;
+}
+.right-contact{
+    width: 50%;
+}
+.left-contact{
+    padding: 50px 100px;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-around;
+}
+.left-contact h2,p,a{
+    color: #8e949e;
+}
+.contact-btn .primary-button{
+    width: 200px !important;
+    text-align: center;
+    background-color: #999ea6;
+    color: black !important;
 }
