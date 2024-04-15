@@ -8,6 +8,8 @@
 
     <script src="https://kit.fontawesome.com/b5a8447ad3.js" crossorigin="anonymous" defer></script>
     <script src="./js/contact.js" defer></script>
+    <script src="./js/mail.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
 </head>
 <body>
     <nav>
@@ -74,10 +76,10 @@
             </div>
             <div class="contactform flex" id="contact-form">
                 <h2><i class="fa-solid fa-arrow-left" id="submit"></i>&nbsp;Get in touch</h2>
-                <form action="" class="cform flex" id="myForm">
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="email" placeholder="Email" name="email" required>
-                    <textarea name="" id="" cols="30" rows="10" name="purpose" required placeholder="Tell us about your project"></textarea>
+                <form action="#" class="cform flex" id="myForm">
+                    <input type="text" id="username" placeholder="Name" name="name" required>
+                    <input type="email" id="useremail" placeholder="Email" name="email" required>
+                    <textarea name="project" id="userproject" cols="30" rows="10" required placeholder="Tell us about your project"></textarea>
                     <input type="submit" >
                 </form>
             </div>
