@@ -7,3 +7,7 @@ btn.addEventListener('click', () => {
    card.classList.add("active");
 });
 
+
+btn2.addEventListener('click', () => {
+   card.classList.remove("active");
+});
